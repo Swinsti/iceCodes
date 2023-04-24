@@ -2030,11 +2030,11 @@ if game.PlaceId == 8065776277 and L_1_ then
 		end;
 		return L_501_, L_499_
 	end;
-	if not isfolder("cuteware.cc") then
-		makefolder("cuteware.cc")
+	if not isfolder("cuteware") then
+		makefolder("cuteware")
 	end;
-	if not isfolder("cuteware.cc/democfg") then
-		makefolder("cuteware.cc/democfg")
+	if not isfolder("cuteware/democfg") then
+		makefolder("cuteware/democfg")
 	end;
 	function L_177_:saveConfig()
 		local L_614_ = L_177_.flags["config_name"]
