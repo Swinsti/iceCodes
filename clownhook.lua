@@ -1,5 +1,5 @@
--- pwned i guess,....
--- fix brain sjros
+-- freeuser🤡
+-- ty for using clownhook🤡
 
 LPH_NO_VIRTUALIZE = function(a) return a end
 LPH_NO_UPVALUES = function(a) return a end
@@ -2030,11 +2030,11 @@ if game.PlaceId == 8065776277 and L_1_ then
 		end;
 		return L_501_, L_499_
 	end;
-	if not isfolder("cuteware") then
-		makefolder("cuteware")
+	if not isfolder("clownhook") then
+		makefolder("clownhook")
 	end;
-	if not isfolder("cuteware/democfg") then
-		makefolder("cuteware/democfg")
+	if not isfolder("clownhook/linxcfg") then
+		makefolder("clownhook/linxcfg")
 	end;
 	function L_177_:saveConfig()
 		local L_614_ = L_177_.flags["config_name"]
@@ -2061,15 +2061,15 @@ if game.PlaceId == 8065776277 and L_1_ then
 				L_615_[L_616_forvar0] = L_617_forvar1
 			end
 		end;
-		writefile("cuteware/democfg/" .. L_614_ .. ".cfg", game:GetService("HttpService"):JSONEncode(L_615_))
+		writefile("clownhook/linxcfg/" .. L_614_ .. ".cfg", game:GetService("HttpService"):JSONEncode(L_615_))
 		L_177_:refreshConfigs()
 	end;
 	function L_177_:loadConfig()
 		local L_618_ = L_177_.flags["selected_config"]
-		if not isfile("cuteware/democfg/" .. L_618_ .. ".cfg") then
+		if not isfile("clownhook/linxcfg/" .. L_618_ .. ".cfg") then
 			return
 		end;
-		local L_619_ = game:GetService("HttpService"):JSONDecode(readfile("cuteware/democfg/" .. L_618_ .. ".cfg"))
+		local L_619_ = game:GetService("HttpService"):JSONDecode(readfile("clownhook/linxcfg/" .. L_618_ .. ".cfg"))
 		for L_620_forvar0, L_621_forvar1 in next, L_177_.options do
 			spawn(function()
 				pcall(function()
@@ -2104,14 +2104,14 @@ if game.PlaceId == 8065776277 and L_1_ then
 	end;
 	function L_177_:refreshConfigs()
 		local L_622_ = {}
-		for L_623_forvar0, L_624_forvar1 in next, listfiles("cuteware/democfg") do
+		for L_623_forvar0, L_624_forvar1 in next, listfiles("clownhook/linxcfg") do
 			table.insert(L_622_, L_624_forvar1:split("\\")[2]:split(".")[1])
 		end;
 		L_177_.options["selected_config"].refresh(L_622_)
 	end;
 	function L_177_:deleteConfig()
-		if isfile("cuteware/democfg/" .. L_177_.flags["selected_config"] .. ".cfg") then
-			delfile("cuteware/democfg/" .. L_177_.flags["selected_config"] .. ".cfg")
+		if isfile("clownhook/linxcfg/" .. L_177_.flags["selected_config"] .. ".cfg") then
+			delfile("clownhook/linxcfg/" .. L_177_.flags["selected_config"] .. ".cfg")
 			L_177_:refreshConfigs()
 		end
 	end;
@@ -2756,7 +2756,7 @@ if game.PlaceId == 8065776277 and L_1_ then
 	L_178_ = L_144_.events.eventHolder:Clone()
 	L_178_.Parent = L_213_.left;
 	L_174_.wait:Destroy()
-	for L_703_forvar0, L_704_forvar1 in pairs(listfiles("cuteware/demos/")) do
+	for L_703_forvar0, L_704_forvar1 in pairs(listfiles("clownhook/demos/")) do
 		local L_705_ = Instance.new("Folder", game.ReplicatedStorage.Demos)
 		L_705_.Name = tostring(L_704_forvar1):split("/")[3]
 		for L_706_forvar0, L_707_forvar1 in next, listfiles(L_704_forvar1) do
@@ -2783,7 +2783,7 @@ local L_5_ = {
 	tabs = {},
 	draggable = true,
 	flags = {},
-	title = "cuteware",
+	title = "clownhook",
 	open = false,
 	mousestate = inputService.MouseIconEnabled,
 	popup = nil,
@@ -2793,7 +2793,7 @@ local L_5_ = {
 	notifications = {},
 	tabSize = 0,
 	theme = {},
-	foldername = "cuteware",
+	foldername = "clownhook",
 	fileext = ".txt"
 }
 library_flags = L_5_.flags;
@@ -5029,10 +5029,10 @@ function L_5_:Init()
 					self.options["Config List"]:RemoveValue(L_927_forvar1)
 				end
 			end;
-			if isfolder("cuteware/scripts") then
+			if isfolder("clownhook/scripts") then
 				local L_928_ = {}
-				for L_929_forvar0, L_930_forvar1 in next, listfiles("cuteware/scripts") do
-					local L_931_ = L_930_forvar1:match('cuteware/scripts\\([%w%s%-]*)%.%a?')
+				for L_929_forvar0, L_930_forvar1 in next, listfiles("clownhook/scripts") do
+					local L_931_ = L_930_forvar1:match('clownhook/scripts\\([%w%s%-]*)%.%a?')
 					table.insert(L_928_, L_931_)
 				end;
 				for L_932_forvar0, L_933_forvar1 in next, L_928_ do
@@ -5046,7 +5046,7 @@ function L_5_:Init()
 					end
 				end
 			else
-				makefolder("cuteware/scripts")
+				makefolder("clownhook/scripts")
 			end
 		end
 	end)
@@ -5321,11 +5321,11 @@ onHit = Instance.new("BindableEvent", workspace)
 onHit.Name = "onHit"
 onKill = Instance.new("BindableEvent", workspace)
 onKill.Name = "onKill"
-if not isfolder("cuteware/tempimages") then
-	makefolder("cuteware/tempimages")
+if not isfolder("clownhook/tempimages") then
+	makefolder("clownhook/tempimages")
 end;
-if not isfolder("cuteware/demos") then
-	makefolder("cuteware/demos")
+if not isfolder("clownhook/demos") then
+	makefolder("clownhook/demos")
 end;
 local L_61_ = -3846999;
 local L_62_ = 8532252;
@@ -5353,7 +5353,7 @@ function addSkin(L_954_arg0, L_955_arg1, L_956_arg2, L_957_arg3, L_958_arg4)
 					Method = "GET"
 				})
 				if L_974_.Success then
-					local L_975_ = "cuteware/tempimages/" .. L_972_forvar0 .. L_955_arg1 .. L_954_arg0 .. ".png"
+					local L_975_ = "clownhook/tempimages/" .. L_972_forvar0 .. L_955_arg1 .. L_954_arg0 .. ".png"
 					writefile(L_975_, L_974_.Body)
 					L_956_arg2[L_972_forvar0] = getcustomasset(L_975_)
 					table.insert(L_961_, L_972_forvar0)
@@ -5367,7 +5367,7 @@ function addSkin(L_954_arg0, L_955_arg1, L_956_arg2, L_957_arg3, L_958_arg4)
 				Method = "GET"
 			})
 			if L_976_.Success then
-				local L_977_ = "cuteware/tempimages/" .. "image" .. L_955_arg1 .. L_954_arg0 .. ".png"
+				local L_977_ = "clow/tempimages/" .. "image" .. L_955_arg1 .. L_954_arg0 .. ".png"
 				writefile(L_977_, L_976_.Body)
 				L_957_arg3 = getcustomasset(L_977_)
 				L_962_ = true
@@ -5431,8 +5431,8 @@ function addSkin(L_954_arg0, L_955_arg1, L_956_arg2, L_957_arg3, L_958_arg4)
 		warn(L_960_)
 	end
 end;
-if not isfile("cuteware/customskins.txt") then
-	writefile("cuteware/customskins.txt", [[
+if not isfile("clownhook/customskins.txt") then
+	writefile("clownhook/customskins.txt", [[
 [
 {"image":"1541381200","skins":{"Main":"1541381200"},"weaponname":"USP","skinname":"Example Skin","rarity":"Red"},
 {"image":"1541381200","skins":{"Main":"6488789251"},"weaponname":"Butterfly Knife","skinname":"Drop Out","rarity":"Knife"},
@@ -5444,9 +5444,9 @@ if not isfile("cuteware/customskins.txt") then
 ]
 ]])
 end;
-if isfile("cuteware/customskins.txt") then
+if isfile("clownhook/customskins.txt") then
 	succes, reason = pcall(function()
-		local L_983_ = readfile("cuteware/customskins.txt")
+		local L_983_ = readfile("clownhook/customskins.txt")
 		local L_984_ = game:service("HttpService"):JSONDecode(L_983_)
 		for L_985_forvar0, L_986_forvar1 in next, L_984_ do
 			addSkin(L_986_forvar1.weaponname, L_986_forvar1.skinname, L_986_forvar1.skins, L_986_forvar1.image, L_986_forvar1.rarity)
@@ -5454,7 +5454,7 @@ if isfile("cuteware/customskins.txt") then
 		wait(0.5)
 	end)
 	if not succes then
-		warn("[cuteware] could not load custom skins! reason: " .. reason)
+		warn("[clownhook] could not load custom skins! reason: " .. reason)
 	end
 end;
 function chat(L_987_arg0)
@@ -6666,7 +6666,7 @@ spawn(function()
 		}
 		local L_1238_ = getnamecallmethod()
 		local L_1239_ = L_1236_arg0.Name;
-		if L_1238_ == "GetService" and L_1237_[1] == "Cuteware" then
+		if L_1238_ == "GetService" and L_1237_[1] == "clownhook" then
 			local L_1240_ = {
 				HitEvent = onHit,
 				KillEvent = onKill,
@@ -9026,20 +9026,14 @@ L_118_:AddToggle({
 })
 local L_119_ = {
 	Standard = {
-		"cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware!",
-		"cuteware.solutions", -- revival
+		"clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook!",
+		"clownhook.solutions🤡", -- revival
 		"$$$",
 		"1 sit nn 1 sit nn 1 sit nn 1 sit nn 1 sit nn",
 		"who? who? who? who? who? who? who? who? who? who? who?"
 	},
 	Emojis = {
-		"ðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒ",
-		"ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€",
-		"ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­",
-		"ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘",
-		"ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼",
-		"ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘",
-		"ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡"
+		"🤡🤡🤡"
 	}
 }
 L_118_:AddToggle({
@@ -9576,8 +9570,8 @@ local L_135_ = L_24_.Viewmodels:Clone()
 L_135_.Name = "Viewmodel_Save"
 L_135_.Parent = L_24_;
 local L_136_, L_137_ = {}, {}
-if not isfile("cuteware/custommodels.txt") then
-	writefile("cuteware/custommodels.txt", [[
+if not isfile("clownhook/custommodels.txt") then
+	writefile("clownhook/custommodels.txt", [[
 [
 {"modelid":"rbxassetid://6476897690","weaponname":"Karambit","modelname":"Old Karambit"},
 {"modelid":"rbxassetid://6422093888","weaponname":"Butterfly Knife","modelname":"Old Butterfly Knife"},
@@ -9596,7 +9590,7 @@ if not isfile("cuteware/custommodels.txt") then
 	]])
 end;
 local L_138_, L_139_ = pcall(function()
-	local L_1499_ = readfile("cuteware/custommodels.txt")
+	local L_1499_ = readfile("clownhook/custommodels.txt")
 	L_136_ = game:service("HttpService"):JSONDecode(L_1499_)
 	L_137_ = {}
 	for L_1500_forvar0, L_1501_forvar1 in next, L_136_ do
@@ -9604,7 +9598,7 @@ local L_138_, L_139_ = pcall(function()
 	end
 end)
 if not L_138_ then
-	warn("[cuteware] could not load custom models! reason: " .. L_139_)
+	warn("[clownhook] could not load custom models! reason: " .. L_139_)
 end;
 function equipCustomModel(L_1502_arg0)
 	for L_1503_forvar0, L_1504_forvar1 in next, L_136_ do
@@ -9673,7 +9667,7 @@ L_134_:AddButton({
 L_134_:AddButton({
 	text = "Refresh Custom Models",
 	callback = function()
-		local L_1514_ = readfile("cuteware/custommodels.txt")
+		local L_1514_ = readfile("clownhook/custommodels.txt")
 		L_136_ = game:service("HttpService"):JSONDecode(L_1514_)
 		L_137_ = {}
 		for L_1515_forvar0, L_1516_forvar1 in next, L_136_ do
@@ -9697,8 +9691,8 @@ L_134_:AddButton({
 	callback = function()
 		L_133_.text = "Are you sure you want to save your current skins?"
 		if L_133_:Show() then
-			if isfile("cuteware/skins.txt") then
-				local L_1522_ = game:GetService"HttpService":JSONDecode(readfile("cuteware/skins.txt"))
+			if isfile("clownhook/skins.txt") then
+				local L_1522_ = game:GetService"HttpService":JSONDecode(readfile("clownhook/skins.txt"))
 				if L_1522_.Knife and getgenv().lastKnife == "" and L_1522_.Knife ~= "" then
 					getgenv().lastKnife = L_1522_.Knife
 				end;
@@ -9720,7 +9714,7 @@ L_134_:AddButton({
 				L_1521_.TFolder[L_1526_forvar1.Name] = L_1526_forvar1.Value
 			end;
 			print(game:GetService"HttpService":JSONEncode(L_1521_))
-			writefile("cuteware/skins.txt", game:GetService"HttpService":JSONEncode(L_1521_))
+			writefile("clownhook/skins.txt", game:GetService"HttpService":JSONEncode(L_1521_))
 		end
 	end
 })
@@ -9729,8 +9723,8 @@ L_134_:AddButton({
 	callback = function()
 		L_133_.text = "Are you sure you want to load your saved skins?"
 		if L_133_:Show() then
-			if isfile("cuteware/skins.txt") then
-				local L_1527_ = game:GetService"HttpService":JSONDecode(readfile("cuteware/skins.txt"))
+			if isfile("clownhook/skins.txt") then
+				local L_1527_ = game:GetService"HttpService":JSONDecode(readfile("clownhook/skins.txt"))
 				for L_1528_forvar0, L_1529_forvar1 in next, L_1527_.TFolder do
 					local L_1530_ = {
 						[1] = "EquipItem",
@@ -10150,18 +10144,18 @@ if L_1_ then
 					addTick()
 				end
 			else
-				if isfolder("cuteware/demos/" .. L_1563_) then
-					delfolder("cuteware/demos/" .. L_1563_)
-					makefolder("cuteware/demos/" .. L_1563_)
+				if isfolder("clownhook/demos/" .. L_1563_) then
+					delfolder("clownhook/demos/" .. L_1563_)
+					makefolder("clownhook/demos/" .. L_1563_)
 				else
-					makefolder("cuteware/demos/" .. L_1563_)
+					makefolder("clownhook/demos/" .. L_1563_)
 				end;
 				for L_1627_forvar0, L_1628_forvar1 in next, L_1555_ do
 					if L_1627_forvar0 % 50 == 0 then
 						wait()
 					end;
 					local L_1629_ = game:service("HttpService"):JSONEncode(L_1628_forvar1)
-					writefile("cuteware/demos/" .. L_1563_ .. "/" .. tostring(L_1627_forvar0) .. ".tick", L_1629_)
+					writefile("clownhook/demos/" .. L_1563_ .. "/" .. tostring(L_1627_forvar0) .. ".tick", L_1629_)
 					L_1559_.main.Text = "Status: Creating " .. tostring(L_1627_forvar0) .. ".tick"
 				end;
 				midpos = Vector3.new(0, 0, 0)
@@ -10190,8 +10184,8 @@ if L_1_ then
 					L_1625_.sides["SkyboxRt"] = L_1626_.SkyboxRt;
 					L_1625_.sides["SkyboxUp"] = L_1626_.SkyboxUp
 				end;
-				writefile("cuteware/demos/" .. L_1563_ .. "/ver.tick", "1")
-				writefile("cuteware/demos/" .. L_1563_ .. "/map.tick", game:service("HttpService"):JSONEncode(L_1625_))
+				writefile("clownhook/demos/" .. L_1563_ .. "/ver.tick", "1")
+				writefile("clownhook/demos/" .. L_1563_ .. "/map.tick", game:service("HttpService"):JSONEncode(L_1625_))
 			end;
 			L_1559_.main.Text = "Status: Not recording"
 		end
@@ -10226,8 +10220,8 @@ ScriptSection:AddList({
 ScriptSection:AddButton({
 	text = "Run Script",
 	callback = function()
-		for L_1633_forvar0, L_1634_forvar1 in next, listfiles("cuteware/scripts") do
-			if not table.find(L_140_, L_1634_forvar1) and L_1634_forvar1:split(".")[1] == "cuteware/scripts\\" .. library_flags["scriptlist"] then
+		for L_1633_forvar0, L_1634_forvar1 in next, listfiles("clownhook/scripts") do
+			if not table.find(L_140_, L_1634_forvar1) and L_1634_forvar1:split(".")[1] == "clownhook/scripts\\" .. library_flags["scriptlist"] then
 				if string.find(L_1634_forvar1:split(".")[2], "lua") then
 					table.insert(L_140_, L_1634_forvar1)
 					loadstring(readfile(L_1634_forvar1))()
@@ -10242,10 +10236,10 @@ end)
 L_5_:Init()
 spawn(function()
 	wait(5)
-	if not isfolder("cuteware/autoexec") then
-		makefolder("cuteware/autoexec")
+	if not isfolder("clownhook/autoexec") then
+		makefolder("clownhook/autoexec")
 	end;
-	for L_1635_forvar0, L_1636_forvar1 in next, listfiles("cuteware/autoexec") do
+	for L_1635_forvar0, L_1636_forvar1 in next, listfiles("clownhook/autoexec") do
 		if string.find(L_1636_forvar1:split(".")[2], "lua") then
 			pcall(function()
 				spawn(function()
@@ -10311,8 +10305,8 @@ rifles.main.Visible = false;
 heavyp.main.Visible = false;
 pistols.main.Visible = false;
 other.main.Visible = false;
-if not isfile("cuteware/chatspam.txt") then
-	writefile("cuteware/chatspam.txt", "Message1\nMessage2\nMessage3\nMessage4\nMessage5")
+if not isfile("clownhook/chatspam.txt") then
+	writefile("clownhook/chatspam.txt", "Message1\nMessage2\nMessage3\nMessage4\nMessage5")
 end;
 for L_1645_forvar0, L_1646_forvar1 in next, L_30_:GetPlayers() do
 	L_5_:AddConnection(L_1646_forvar1.CharacterAdded, function(L_1647_arg0)
@@ -10483,15 +10477,15 @@ spawn(function()
 		updateSkybox()
 	end
 end)
-if isfile("cuteware/temp.tmp") then
-	L_5_:LoadConfig(readfile("cuteware/temp.tmp"))
-	delfile("cuteware/temp.tmp")
+if isfile("clownhook/temp.tmp") then
+	L_5_:LoadConfig(readfile("clownhook/temp.tmp"))
+	delfile("clownhook/temp.tmp")
 end;
 L_32_.OnTeleport:Connect(function(L_1679_arg0)
 end)
 L_30_.PlayerRemoving:Connect(function(L_1680_arg0)
 	if L_1680_arg0 == L_32_ then
-		for L_1681_forvar0, L_1682_forvar1 in next, listfiles("cuteware/tempimages") do
+		for L_1681_forvar0, L_1682_forvar1 in next, listfiles("clownhook/tempimages") do
 			delfile(L_1682_forvar1)
 		end
 	end
@@ -10739,8 +10733,8 @@ L_28_.RenderStepped:Connect(function(L_1691_arg0)
 		if chatspamDebounce == 175 then
 			chatspamDebounce = 0;
 			local L_1721_ = library_flags["chatMode"]
-			if L_1721_ == "Custom" and isfile("cuteware/chatspam.txt") then
-				local L_1722_ = readfile("cuteware/chatspam.txt")
+			if L_1721_ == "Custom" and isfile("clownhook/chatspam.txt") then
+				local L_1722_ = readfile("clownhook/chatspam.txt")
 				local L_1723_ = string.split(L_1722_, "\n")
 				if # L_1723_ >= 1 then
 					L_55_ = L_55_ + 1;
@@ -11018,7 +11012,7 @@ L_28_.RenderStepped:Connect(function(L_1691_arg0)
 		local L_1757_ = string.len(L_1754_) == 2 and L_1754_ or "0" .. L_1754_;
 		local L_1758_ = string.len(L_1755_) == 2 and L_1755_ or "0" .. L_1755_;
 		local L_1759_ = string.len(L_1756_) == 2 and L_1756_ or "0" .. L_1756_;
-		L_116_.Text = " cuteware | " .. L_1759_ .. ":" .. L_1758_ .. ":" .. L_1757_ .. " | " .. L_32_.Name;
+		L_116_.Text = " clownhook | " .. L_1759_ .. ":" .. L_1758_ .. ":" .. L_1757_ .. " | " .. L_32_.Name;
 		if L_116_.TextBounds.X > 210 then
 			L_116_.TextSize = L_116_.TextSize - 1
 		end
@@ -13071,11 +13065,11 @@ if game.PlaceId == 8065776277 and L_1_ then
 		end;
 		return L_505_, L_503_
 	end;
-	if not isfolder("cuteware") then
-		makefolder("cuteware")
+	if not isfolder("clownhook") then
+		makefolder("clownhook")
 	end;
-	if not isfolder("cuteware/democfg") then
-		makefolder("cuteware/democfg")
+	if not isfolder("clownhook/linxcfg") then
+		makefolder("clownhook/linxcfg")
 	end;
 	function L_179_:saveConfig()
 		local L_618_ = L_179_.flags["config_name"]
@@ -13102,15 +13096,15 @@ if game.PlaceId == 8065776277 and L_1_ then
 				L_619_[L_620_forvar0] = L_621_forvar1
 			end
 		end;
-		writefile("cuteware/democfg/" .. L_618_ .. ".cfg", game:GetService("HttpService"):JSONEncode(L_619_))
+		writefile("clownhook/linxcfg/" .. L_618_ .. ".cfg", game:GetService("HttpService"):JSONEncode(L_619_))
 		L_179_:refreshConfigs()
 	end;
 	function L_179_:loadConfig()
 		local L_622_ = L_179_.flags["selected_config"]
-		if not isfile("cuteware/democfg/" .. L_622_ .. ".cfg") then
+		if not isfile("clownhook/linxcfg/" .. L_622_ .. ".cfg") then
 			return
 		end;
-		local L_623_ = game:GetService("HttpService"):JSONDecode(readfile("cuteware/democfg/" .. L_622_ .. ".cfg"))
+		local L_623_ = game:GetService("HttpService"):JSONDecode(readfile("clownhook/linxcfg/" .. L_622_ .. ".cfg"))
 		for L_624_forvar0, L_625_forvar1 in next, L_179_.options do
 			spawn(function()
 				pcall(function()
@@ -13145,14 +13139,14 @@ if game.PlaceId == 8065776277 and L_1_ then
 	end;
 	function L_179_:refreshConfigs()
 		local L_626_ = {}
-		for L_627_forvar0, L_628_forvar1 in next, listfiles("cuteware/democfg") do
+		for L_627_forvar0, L_628_forvar1 in next, listfiles("clownhook/linxcfg") do
 			table.insert(L_626_, L_628_forvar1:split("\\")[2]:split(".")[1])
 		end;
 		L_179_.options["selected_config"].refresh(L_626_)
 	end;
 	function L_179_:deleteConfig()
-		if isfile("cuteware/democfg/" .. L_179_.flags["selected_config"] .. ".cfg") then
-			delfile("cuteware/democfg/" .. L_179_.flags["selected_config"] .. ".cfg")
+		if isfile("clownhook/linxcfg/" .. L_179_.flags["selected_config"] .. ".cfg") then
+			delfile("clownhook/linxcfg/" .. L_179_.flags["selected_config"] .. ".cfg")
 			L_179_:refreshConfigs()
 		end
 	end;
@@ -13804,9 +13798,9 @@ if game.PlaceId == 8065776277 and L_1_ then
 	L_179_:refreshConfigs()
 	L_180_ = L_145_.events.eventHolder:Clone()
 	L_180_.Parent = L_215_.left;
-	L_176_.wait.TextLabel.Text = "Loading " .. tostring(# listfiles("cuteware/demos/")) .. " demos..."
+	L_176_.wait.TextLabel.Text = "Loading " .. tostring(# listfiles("clownhook/demos/")) .. " demos..."
 	wait()
-	for L_707_forvar0, L_708_forvar1 in pairs(listfiles("cuteware/demos/")) do
+	for L_707_forvar0, L_708_forvar1 in pairs(listfiles("clownhook/demos/")) do
 		local L_709_ = Instance.new("Folder", game.ReplicatedStorage.Demos)
 		L_709_.Name = tostring(L_708_forvar1):split("/")[3]
 		for L_710_forvar0, L_711_forvar1 in next, listfiles(L_708_forvar1) do
@@ -13858,7 +13852,7 @@ local L_5_ = {
 	tabs = {},
 	draggable = true,
 	flags = {},
-	title = "cuteware",
+	title = "clownhook",
 	open = false,
 	mousestate = inputService.MouseIconEnabled,
 	popup = nil,
@@ -13868,7 +13862,7 @@ local L_5_ = {
 	notifications = {},
 	tabSize = 0,
 	theme = {},
-	foldername = "cuteware/cb",
+	foldername = "clownhook/cb",
 	fileext = ".txt"
 }
 library_flags = L_5_.flags;
@@ -16106,10 +16100,10 @@ function L_5_:Init()
 					self.options["Config List"]:RemoveValue(L_935_forvar1)
 				end
 			end;
-			if isfolder("cuteware/scripts") then
+			if isfolder("clownhook/scripts") then
 				local L_936_ = {}
-				for L_937_forvar0, L_938_forvar1 in next, listfiles("cuteware/scripts") do
-					local L_939_ = L_938_forvar1:match('cuteware/scripts\\([%w%s%-]*)%.%a?')
+				for L_937_forvar0, L_938_forvar1 in next, listfiles("clownhook/scripts") do
+					local L_939_ = L_938_forvar1:match('clownhook/scripts\\([%w%s%-]*)%.%a?')
 					table.insert(L_936_, L_939_)
 				end;
 				for L_940_forvar0, L_941_forvar1 in next, L_936_ do
@@ -16123,7 +16117,7 @@ function L_5_:Init()
 					end
 				end
 			else
-				makefolder("cuteware/scripts")
+				makefolder("clownhook/scripts")
 			end
 		end
 	end)
@@ -16398,11 +16392,11 @@ onHit = Instance.new("BindableEvent", workspace)
 onHit.Name = "onHit"
 onKill = Instance.new("BindableEvent", workspace)
 onKill.Name = "onKill"
-if not isfolder("cuteware/tempimages") then
-	makefolder("cuteware/tempimages")
+if not isfolder("clownhook/tempimages") then
+	makefolder("clownhook/tempimages")
 end;
-if not isfolder("cuteware/demos") then
-	makefolder("cuteware/demos")
+if not isfolder("clownhook/demos") then
+	makefolder("clownhook/demos")
 end;
 local L_61_ = -3846999;
 local L_62_ = 8532252;
@@ -16430,7 +16424,7 @@ function addSkin(L_962_arg0, L_963_arg1, L_964_arg2, L_965_arg3, L_966_arg4)
 					Method = "GET"
 				})
 				if L_982_.Success then
-					local L_983_ = "cuteware/tempimages/" .. L_980_forvar0 .. L_963_arg1 .. L_962_arg0 .. ".png"
+					local L_983_ = "clownhook/tempimages/" .. L_980_forvar0 .. L_963_arg1 .. L_962_arg0 .. ".png"
 					writefile(L_983_, L_982_.Body)
 					L_964_arg2[L_980_forvar0] = getcustomasset(L_983_)
 					table.insert(L_969_, L_980_forvar0)
@@ -16444,7 +16438,7 @@ function addSkin(L_962_arg0, L_963_arg1, L_964_arg2, L_965_arg3, L_966_arg4)
 				Method = "GET"
 			})
 			if L_984_.Success then
-				local L_985_ = "cuteware/tempimages/" .. "image" .. L_963_arg1 .. L_962_arg0 .. ".png"
+				local L_985_ = "clownhook/tempimages/" .. "image" .. L_963_arg1 .. L_962_arg0 .. ".png"
 				writefile(L_985_, L_984_.Body)
 				L_965_arg3 = getcustomasset(L_985_)
 				L_970_ = true
@@ -16508,8 +16502,8 @@ function addSkin(L_962_arg0, L_963_arg1, L_964_arg2, L_965_arg3, L_966_arg4)
 		warn(L_968_)
 	end
 end;
-if not isfile("cuteware/customskins.txt") then
-	writefile("cuteware/customskins.txt", [[
+if not isfile("clownhook/customskins.txt") then
+	writefile("clownhook/customskins.txt", [[
 [
 {"image":"1541381200","skins":{"Main":"1541381200"},"weaponname":"USP","skinname":"Example Skin","rarity":"Red"},
 {"image":"1541381200","skins":{"Main":"6488789251"},"weaponname":"Butterfly Knife","skinname":"Drop Out","rarity":"Knife"},
@@ -16521,9 +16515,9 @@ if not isfile("cuteware/customskins.txt") then
 ]
 ]])
 end;
-if isfile("cuteware/customskins.txt") then
+if isfile("clownhook/customskins.txt") then
 	succes, reason = pcall(function()
-		local L_991_ = readfile("cuteware/customskins.txt")
+		local L_991_ = readfile("clownhook/customskins.txt")
 		local L_992_ = game:service("HttpService"):JSONDecode(L_991_)
 		for L_993_forvar0, L_994_forvar1 in next, L_992_ do
 			addSkin(L_994_forvar1.weaponname, L_994_forvar1.skinname, L_994_forvar1.skins, L_994_forvar1.image, L_994_forvar1.rarity)
@@ -16531,7 +16525,7 @@ if isfile("cuteware/customskins.txt") then
 		wait(0.5)
 	end)
 	if not succes then
-		warn("[cuteware] could not load custom skins! reason: " .. reason)
+		warn("[clownhook] could not load custom skins! reason: " .. reason)
 	end
 end;
 function chat(L_995_arg0)
@@ -17743,7 +17737,7 @@ spawn(function()
 		}
 		local L_1246_ = getnamecallmethod()
 		local L_1247_ = L_1244_arg0.Name;
-		if L_1246_ == "GetService" and L_1245_[1] == "Cuteware" then
+		if L_1246_ == "GetService" and L_1245_[1] == "Clownhook" then
 			local L_1248_ = {
 				HitEvent = onHit,
 				KillEvent = onKill,
@@ -20103,20 +20097,14 @@ L_118_:AddToggle({
 })
 local L_119_ = {
 	Standard = {
-		"cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware! cuteware!",
-		"cuteware.solutions",
+		"clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook! clownhook!",
+		"clownhook.solutions🤡",
 		"$$$",
 		"1 sit nn 1 sit nn 1 sit nn 1 sit nn 1 sit nn",
 		"who? who? who? who? who? who? who? who? who? who? who?"
 	},
 	Emojis = {
-		"ðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒðŸ˜ƒ",
-		"ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€ðŸ˜€",
-		"ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­ðŸ˜­",
-		"ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘ðŸ˜‘",
-		"ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼ðŸ˜¼",
-		"ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘ðŸ‘",
-		"ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡ðŸ˜¡"
+		"🤡🤡🤡"
 	}
 }
 L_118_:AddToggle({
@@ -20653,8 +20641,8 @@ local L_135_ = L_24_.Viewmodels:Clone()
 L_135_.Name = "Viewmodel_Save"
 L_135_.Parent = L_24_;
 local L_136_, L_137_ = {}, {}
-if not isfile("cuteware/custommodels.txt") then
-	writefile("cuteware/custommodels.txt", [[
+if not isfile("clownhook/custommodels.txt") then
+	writefile("clownhook/custommodels.txt", [[
 [
 {"modelid":"rbxassetid://6476897690","weaponname":"Karambit","modelname":"Old Karambit"},
 {"modelid":"rbxassetid://6422093888","weaponname":"Butterfly Knife","modelname":"Old Butterfly Knife"},
@@ -20673,7 +20661,7 @@ if not isfile("cuteware/custommodels.txt") then
 	]])
 end;
 local L_138_, L_139_ = pcall(function()
-	local L_1507_ = readfile("cuteware/custommodels.txt")
+	local L_1507_ = readfile("clownhook/custommodels.txt")
 	L_136_ = game:service("HttpService"):JSONDecode(L_1507_)
 	L_137_ = {}
 	for L_1508_forvar0, L_1509_forvar1 in next, L_136_ do
@@ -20681,7 +20669,7 @@ local L_138_, L_139_ = pcall(function()
 	end
 end)
 if not L_138_ then
-	warn("[cuteware] could not load custom models! reason: " .. L_139_)
+	warn("[clownhook] could not load custom models! reason: " .. L_139_)
 end;
 function equipCustomModel(L_1510_arg0)
 	for L_1511_forvar0, L_1512_forvar1 in next, L_136_ do
@@ -20750,7 +20738,7 @@ L_134_:AddButton({
 L_134_:AddButton({
 	text = "Refresh Custom Models",
 	callback = function()
-		local L_1522_ = readfile("cuteware/custommodels.txt")
+		local L_1522_ = readfile("clownhook/custommodels.txt")
 		L_136_ = game:service("HttpService"):JSONDecode(L_1522_)
 		L_137_ = {}
 		for L_1523_forvar0, L_1524_forvar1 in next, L_136_ do
@@ -20774,8 +20762,8 @@ L_134_:AddButton({
 	callback = function()
 		L_133_.text = "Are you sure you want to save your current skins?"
 		if L_133_:Show() then
-			if isfile("cuteware/skins.txt") then
-				local L_1530_ = game:GetService"HttpService":JSONDecode(readfile("cuteware/skins.txt"))
+			if isfile("clownhook/skins.txt") then
+				local L_1530_ = game:GetService"HttpService":JSONDecode(readfile("clownhook/skins.txt"))
 				if L_1530_.Knife and getgenv().lastKnife == "" and L_1530_.Knife ~= "" then
 					getgenv().lastKnife = L_1530_.Knife
 				end;
@@ -20797,7 +20785,7 @@ L_134_:AddButton({
 				L_1529_.TFolder[L_1534_forvar1.Name] = L_1534_forvar1.Value
 			end;
 			print(game:GetService"HttpService":JSONEncode(L_1529_))
-			writefile("cuteware/skins.txt", game:GetService"HttpService":JSONEncode(L_1529_))
+			writefile("clownhook/skins.txt", game:GetService"HttpService":JSONEncode(L_1529_))
 		end
 	end
 })
@@ -20806,8 +20794,8 @@ L_134_:AddButton({
 	callback = function()
 		L_133_.text = "Are you sure you want to load your saved skins?"
 		if L_133_:Show() then
-			if isfile("cuteware/skins.txt") then
-				local L_1535_ = game:GetService"HttpService":JSONDecode(readfile("cuteware/skins.txt"))
+			if isfile("clownhook/skins.txt") then
+				local L_1535_ = game:GetService"HttpService":JSONDecode(readfile("clownhook/skins.txt"))
 				for L_1536_forvar0, L_1537_forvar1 in next, L_1535_.TFolder do
 					local L_1538_ = {
 						[1] = "EquipItem",
@@ -21243,18 +21231,18 @@ if L_1_ then
 					addTick()
 				end
 			else
-				if isfolder("cuteware/demos/" .. L_1571_) then
-					delfolder("cuteware/demos/" .. L_1571_)
-					makefolder("cuteware/demos/" .. L_1571_)
+				if isfolder("clownhook/demos/" .. L_1571_) then
+					delfolder("clownhook/demos/" .. L_1571_)
+					makefolder("clownhook/demos/" .. L_1571_)
 				else
-					makefolder("cuteware/demos/" .. L_1571_)
+					makefolder("clownhook/demos/" .. L_1571_)
 				end;
 				for L_1635_forvar0, L_1636_forvar1 in next, L_1563_ do
 					if L_1635_forvar0 % 50 == 0 then
 						wait()
 					end;
 					local L_1637_ = game:service("HttpService"):JSONEncode(L_1636_forvar1)
-					writefile("cuteware/demos/" .. L_1571_ .. "/" .. tostring(L_1635_forvar0) .. ".tick", L_1637_)
+					writefile("clownhook/demos/" .. L_1571_ .. "/" .. tostring(L_1635_forvar0) .. ".tick", L_1637_)
 					L_1567_.main.Text = "Status: Creating " .. tostring(L_1635_forvar0) .. ".tick"
 				end;
 				midpos = Vector3.new(0, 0, 0)
@@ -21283,8 +21271,8 @@ if L_1_ then
 					L_1633_.sides["SkyboxRt"] = L_1634_.SkyboxRt;
 					L_1633_.sides["SkyboxUp"] = L_1634_.SkyboxUp
 				end;
-				writefile("cuteware/demos/" .. L_1571_ .. "/ver.tick", "1")
-				writefile("cuteware/demos/" .. L_1571_ .. "/map.tick", game:service("HttpService"):JSONEncode(L_1633_))
+				writefile("clownhook/demos/" .. L_1571_ .. "/ver.tick", "1")
+				writefile("clownhook/demos/" .. L_1571_ .. "/map.tick", game:service("HttpService"):JSONEncode(L_1633_))
 			end;
 			L_1567_.main.Text = "Status: Not recording"
 		end
@@ -21319,8 +21307,8 @@ ScriptSection:AddList({
 ScriptSection:AddButton({
 	text = "Run Script",
 	callback = function()
-		for L_1641_forvar0, L_1642_forvar1 in next, listfiles("cuteware/scripts") do
-			if not table.find(L_141_, L_1642_forvar1) and L_1642_forvar1:split(".")[1] == "cuteware/scripts\\" .. library_flags["scriptlist"] then
+		for L_1641_forvar0, L_1642_forvar1 in next, listfiles("clownhook/scripts") do
+			if not table.find(L_141_, L_1642_forvar1) and L_1642_forvar1:split(".")[1] == "clownhook/scripts\\" .. library_flags["scriptlist"] then
 				if string.find(L_1642_forvar1:split(".")[2], "lua") then
 					table.insert(L_141_, L_1642_forvar1)
 					loadstring(readfile(L_1642_forvar1))()
@@ -21335,10 +21323,10 @@ end)
 L_5_:Init()
 spawn(function()
 	wait(5)
-	if not isfolder("cuteware/autoexec") then
-		makefolder("cuteware/autoexec")
+	if not isfolder("clownhook/autoexec") then
+		makefolder("clownhook/autoexec")
 	end;
-	for L_1643_forvar0, L_1644_forvar1 in next, listfiles("cuteware/autoexec") do
+	for L_1643_forvar0, L_1644_forvar1 in next, listfiles("clownhook/autoexec") do
 		if string.find(L_1644_forvar1:split(".")[2], "lua") then
 			pcall(function()
 				spawn(function()
@@ -21404,8 +21392,8 @@ rifles.main.Visible = false;
 heavyp.main.Visible = false;
 pistols.main.Visible = false;
 other.main.Visible = false;
-if not isfile("cuteware/chatspam.txt") then
-	writefile("cuteware/chatspam.txt", "Message1\nMessage2\nMessage3\nMessage4\nMessage5")
+if not isfile("clownhook/chatspam.txt") then
+	writefile("clownhook/chatspam.txt", "Message1\nMessage2\nMessage3\nMessage4\nMessage5")
 end;
 for L_1653_forvar0, L_1654_forvar1 in next, L_30_:GetPlayers() do
 	L_5_:AddConnection(L_1654_forvar1.CharacterAdded, function(L_1655_arg0)
@@ -21576,15 +21564,15 @@ spawn(function()
 		updateSkybox()
 	end
 end)
-if isfile("cuteware/temp.tmp") then
-	L_5_:LoadConfig(readfile("cuteware/temp.tmp"))
-	delfile("cuteware/temp.tmp")
+if isfile("clownhook/temp.tmp") then
+	L_5_:LoadConfig(readfile("clownhook/temp.tmp"))
+	delfile("clownhook/temp.tmp")
 end;
 L_32_.OnTeleport:Connect(function(L_1687_arg0)
 end)
 L_30_.PlayerRemoving:Connect(function(L_1688_arg0)
 	if L_1688_arg0 == L_32_ then
-		for L_1689_forvar0, L_1690_forvar1 in next, listfiles("cuteware/tempimages") do
+		for L_1689_forvar0, L_1690_forvar1 in next, listfiles("clownhook/tempimages") do
 			delfile(L_1690_forvar1)
 		end
 	end
@@ -21832,8 +21820,8 @@ L_28_.RenderStepped:Connect(function(L_1699_arg0)
 		if chatspamDebounce == 175 then
 			chatspamDebounce = 0;
 			local L_1729_ = library_flags["chatMode"]
-			if L_1729_ == "Custom" and isfile("cuteware/chatspam.txt") then
-				local L_1730_ = readfile("cuteware/chatspam.txt")
+			if L_1729_ == "Custom" and isfile("clownhook/chatspam.txt") then
+				local L_1730_ = readfile("clownhook/chatspam.txt")
 				local L_1731_ = string.split(L_1730_, "\n")
 				if # L_1731_ >= 1 then
 					L_55_ = L_55_ + 1;
@@ -22111,7 +22099,7 @@ L_28_.RenderStepped:Connect(function(L_1699_arg0)
 		local L_1765_ = string.len(L_1762_) == 2 and L_1762_ or "0" .. L_1762_;
 		local L_1766_ = string.len(L_1763_) == 2 and L_1763_ or "0" .. L_1763_;
 		local L_1767_ = string.len(L_1764_) == 2 and L_1764_ or "0" .. L_1764_;
-		L_116_.Text = " cuteware | " .. L_1767_ .. ":" .. L_1766_ .. ":" .. L_1765_ .. " | " .. L_32_.Name;
+		L_116_.Text = " clownhook | " .. L_1767_ .. ":" .. L_1766_ .. ":" .. L_1765_ .. " | " .. L_32_.Name;
 		if L_116_.TextBounds.X > 210 then
 			L_116_.TextSize = L_116_.TextSize - 1
 		end
